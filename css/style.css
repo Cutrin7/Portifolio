@@ -1,0 +1,150 @@
+/* RESET CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: radial-gradient(circle, #323232, #535252);
+}
+
+.central{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    width: 603px;
+    height: 250px;
+    position: relative;
+    top: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 0.9; /* Ajusta o espaçamento vertical */
+}
+
+.btns{
+    width: 212px;
+    height: 50px;
+    display: flex;
+    gap: 25px;
+    position: relative;
+    left: 950px;
+    bottom: 25px;
+    animation: subir 2s infinite ease-in-out;
+    transition: transform 0.3 ease-in-out; /*adiciona uma transição suave ao ícone. o movimento será suavizado em 0.3 segundos.*/
+}
+
+.btns :hover{
+    transform: translateY(-5px); /* Move o ícone 10px para cima ao passar o mouse */
+}
+
+@keyframes subir{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#intro{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    width: 220px;
+    height: 35px;
+    opacity: 0.6;
+    position: relative;
+    left: 600px;
+    top: 35px;
+}
+
+#desc{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    width: 537px;
+    height: 72px;
+    opacity: 0.6;
+    position: relative;
+    top: 250px;
+    left: 800px;
+    text-align: right;
+}
+
+h1{
+    font-size: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    font-size: 160px;
+}
+
+
+section{
+    position: relative;
+    top: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 186px;
+}
+
+.proj{
+    width: 550px;
+    height: 300px;
+    border: black solid 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 10px;
+} 
+
+.content{
+    color: white;
+    width: 550px;
+    height: 461px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h4{
+    font-size: 40px;
+}
+
+#texto{
+    font-size: 20px;
+    padding: 10px
+}
+
+button{
+    color: white;
+    width: 171px;
+    background-color: #5DA0B8;
+    height: 38px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+.clique :hover{
+    transition: 0.5s all;
+    background-color: #3cb3df;
+    transform: translateY(-5px);
+}
+
+footer{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    display: block;
+    position: relative;
+    top: 800px;
+}
+
