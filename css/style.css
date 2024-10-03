@@ -13,17 +13,23 @@ body{
     background: radial-gradient(circle, #323232, #535252);
 }
 
+.paidetodos{
+    position: relative;
+    height: 96vh;
+}
+
 .central{
     color: white;
     font-family: "Bebas Neue", sans-serif;
     width: 603px;
     height: 250px;
-    position: relative;
-    top: 320px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
     text-align: left;
-    line-height: 0.9; /* Ajusta o espaçamento vertical */
+     line-height: 0.9; /* Ajusta o espaçamento vertical */
 }
 
 .btns{
@@ -31,9 +37,12 @@ body{
     height: 50px;
     display: flex;
     gap: 25px;
-    position: relative;
-    left: 950px;
-    bottom: 25px;
+
+    position: absolute;
+    left: 51%;
+    top: 49%;
+    transform: translate(5%, -200%);
+
     animation: subir 2s infinite ease-in-out;
     transition: transform 0.3 ease-in-out; /*adiciona uma transição suave ao ícone. o movimento será suavizado em 0.3 segundos.*/
 }
@@ -42,7 +51,7 @@ body{
     transform: translateY(-5px); /* Move o ícone 10px para cima ao passar o mouse */
 }
 
-@keyframes subir{
+/* @keyframes subir{
     0%{
         transform: translateY(0);
     }
@@ -54,7 +63,7 @@ body{
     100%{
         transform: translateY(0);
     }
-}
+} */
 
 #intro{
     color: white;
@@ -62,9 +71,11 @@ body{
     width: 220px;
     height: 35px;
     opacity: 0.6;
-    position: relative;
-    left: 600px;
-    top: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-160%, -440%);
+
 }
 
 #desc{
@@ -73,10 +84,11 @@ body{
     width: 537px;
     height: 72px;
     opacity: 0.6;
-    position: relative;
-    top: 250px;
-    left: 800px;
     text-align: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, 135%);
 }
 
 h1{
@@ -92,10 +104,11 @@ span{
 
 section{
     position: relative;
-    top: 550px;
+    top: 100px;
     display: flex;
     justify-content: space-evenly;
     gap: 186px;
+    
 }
 
 .proj{
@@ -145,6 +158,28 @@ footer{
     font-family: "Bebas Neue", sans-serif;
     display: block;
     position: relative;
-    top: 800px;
+    top: 400px;
 }
 
+@media screen and (max-width: 1280px){
+    
+    .paidetodos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 100px;
+        top: 200px;
+    }
+    
+    .central{
+        width: 90%;
+        max-width: 600px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
