@@ -163,20 +163,7 @@ footer{
 
 @media screen and (max-width: 1280px){
     
-    .paidetodos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        margin: 100px;
-        top: 200px;
-    }
-    
-    .central{
-        width: 90%;
-        max-width: 600px;
-    }
-
+  
     section{
         display: flex;
         flex-direction: column;
